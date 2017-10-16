@@ -1,0 +1,280 @@
+
+*{
+	margin:0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	height:100%;
+	overflow:auto;
+	background: #f2f2f2;
+}
+ul li{
+	list-style: none;
+	text-align: center;
+}
+a{
+	text-decoration:none;
+}
+#header{
+	width: 100%;
+	height: 15%;
+	overflow: hidden;
+	text-align: center;
+	font-size: 10px;
+	line-height: 110px;
+	background: #3d3d3d;
+	z-index: 1000;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	opacity:0.8;
+	min-width: 310px;
+}
+.logo{
+	width: 10%;
+	height: 40px;
+	position: absolute;
+	top: -9px;
+	left: 45%;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+#header .daohang{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+#header .daohang a{
+	display: inline-block;
+	width: 25%;
+	color:#dedede;
+	float: left;
+	margin-top: 25px;
+}
+#center{
+	margin-top: 130px;
+	min-width: 310px;
+}
+.lunbo,.neirong{
+	width: 88%;
+	z-index: 1;
+	margin: 0 auto;
+	position: relative;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	z-index: 1
+	
+}
+.swiper-wrapper{
+    width: 100%;
+}
+.swiper-slide{
+	width: 100%;
+
+}
+.swiper-slide img{
+	width: 100%;
+}
+.swiper-pagination {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    bottom: -25px;
+    width: 100%;
+}
+.swiper-pagination-bullet{
+	margin: 0px 8px;
+}
+.message {
+    background: rgb(0,0,0);
+    position: absolute;
+    z-index: 22;
+    bottom: 4px;
+    height: 35px;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.swiper-button-prev{
+	background: url(../img/left.png) no-repeat;
+}
+.swiper-button-next{
+	background: url(../img/right.png) no-repeat;
+}
+.message p {
+    width: 100%;
+    text-align: center;
+    color: #f2f2f2;
+    line-height: 35px;
+    position: absolute;
+    top: 35px;
+    display: none;
+}
+.swiper_p {
+    width: 100%;
+    margin: 50px 0px 20px 0px;
+    text-indent: 2em;
+    padding-top: 1%;
+    border-bottom: 1px #e8e8e8 solid;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #666666;
+}
+.neirong{
+	overflow: hidden;
+}
+.neirong a{
+	display: block;
+	width: 31%;
+	float: left;
+	color: #666666;
+	text-align: center;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 2px 2px 2px #e3e3e3;
+	margin-top:10px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.work {
+    width: 100%;
+    position: absolute;
+    background: black;
+    height:100%; 
+    border-radius: 5px;
+     opacity:0.5;
+    display: none;
+}
+.work_wrap {
+    position: absolute;
+    margin-top: -30px;
+    top: 50%;
+    left: 50%;
+}
+.neirong a div ul {
+    color: white;
+    margin-left: -100%;
+}
+.neirong a div ul li {
+    text-align: center;
+}
+.work_wrap ul li:nth-child(1){
+	font-size: 30px;
+	color: white;
+}
+.neirong a:hover .work{
+    display: block;
+}
+.app{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.neirong a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px 5px 0 0;
+}
+.neirong a p{
+	font-size: 0.98em;
+	line-height: 30px;
+	margin-top: 0px;
+}
+#foot{
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+	background: #e0e0e0;
+	overflow: hidden;
+	min-width: 310px;
+}
+.foot_left{
+	width: 50%;
+    text-align: right;
+    float: left;
+    margin-top: 10px;
+}
+#foot a{
+	display: inline-block;
+	width: 30px;
+}
+#foot a img{
+	width: 100%;
+	height: 100%;
+}
+.foot_right{
+	width: 45%;
+	float: left;
+	margin:10px 0 0 1%;
+	padding-left: 1%;
+	border-left: 1px solid #adabac;
+}
+.foot_right img{
+	width: 120px;
+}
+.foot_right p{
+	font-size: 12px;
+	line-height: 20px;
+	color: #adabac;
+}
+@media screen and (max-width: 479px) {
+	#header{
+	height: 10%;
+	}
+	.logo{
+		width: 32%;
+		height: 33px;
+		position: absolute;
+		top: -23px;
+		left: 34%;
+	}
+	.logo img{
+		width: 100%;
+		height: 100%;
+	}
+	#header .daohang{
+		width: 100%;
+		height: 100%;
+		margin: 0 40px;
+	}
+	#header .daohang a{
+		width: 20%;
+		margin-top: 0px;
+	}
+	#center{
+		margin-top: 85px;
+	}
+	.lunbo,.neirong{
+		width: 95%;
+	}
+	.swiper_p{
+		padding-top: 0%;
+	}
+	.neirong a{
+		width: 48%;
+		margin-bottom: 12px;
+		margin-left: 5px;
+	}
+    .app{
+		margin-left: 0%;
+		margin-right: 0%;
+    }
+    #foot{
+    	margin-top: 12px;
+    }
+	.foot_right img {
+    width: 65%;
+    }
+	.foot_right p{
+		line-height: 20px;
+    }
+}
